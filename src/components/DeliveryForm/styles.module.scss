@@ -1,0 +1,64 @@
+
+.date{
+    @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+
+    .date__input{
+        font-size: 14px;
+        font-family: "Raleway", sans-serif;
+        width: 230px;
+        border: 1px solid #F0F4FB;
+        border-radius: 45px;
+        padding: 10px 34px;
+        outline-color: #2967FF;
+        margin-right: 10px;
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+        &::placeholder{
+            color: #727280;
+        }
+    }
+
+}
+.where_to_deliver{
+    margin-top: 30px;
+    .deliver__title{
+
+    }
+}
+.form__title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2D2D2F;
+    margin-bottom: 10px;
+}
+.name{
+    margin-top: 18px;
+}
+.phone{
+    margin-top: 18px;
+}
+.input{
+    font-family: "Raleway", sans-serif;
+    width: 290px;
+    border: 1px solid #F0F4FB;
+    border-radius: 45px;
+    padding: 10px 34px;
+    outline-color: #2967FF;
+    @media (max-width: 650px) {
+        width: 100%;
+    }
+    &>div.special-label{
+        display: none !important;
+    }
+}
+.error__message{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(231, 0, 0);
+}

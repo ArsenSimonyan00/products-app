@@ -1,0 +1,108 @@
+.cartItem{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #AEC2EA;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    @media (max-width: 585px) {
+        flex-direction: column;
+      }
+    .cartItem__left{
+        display: flex;
+        gap: 20px; 
+        .cartItem__img{
+            width: 57px;
+            height: 57px;
+            & img{
+                width: 100px;
+                height: 100%;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+        .cartItem__info{
+            .cartItem__name{
+                font-size: 16px;
+                color: #2D2D2F;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                   }
+            }
+        }
+    }
+    .cartItem__right{
+        display: flex;
+        gap: 114px;
+        flex-shrink: 0;
+        @media (max-width: 767px) {
+            gap: 25px;
+           }
+        .right__content{
+            display: flex;
+            gap: 15px;
+        }
+        .quantity{
+            border-radius: 35px;
+            border: 1px solid #AEC2EA;
+            padding: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 135px;
+            height: 44px;
+            @media (max-width: 576px) {
+                width: 100px;
+                height: 34px;
+            }
+
+            .quantity__btn{
+                color: #AEC2EA;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 5px;
+            }
+            .count{
+                font-size: 16px;
+                color: #2D2D2F;
+            }
+        }
+        .prices{
+            padding-top: 10px;
+            @media (max-width: 578px) {
+                padding-top: 0;
+            align-self: center;
+               }
+            align-self: center;
+            .price{
+                font-size: 16px;
+                font-weight: 600;
+                color: #2D2D2F;
+                min-width: 100px;
+            }
+        }
+        .deleteBtn{
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            align-self: flex-start;
+            @media (max-width: 578px) {
+            align-self: center;
+               }
+            .deleteIcon{
+                stroke: #AEC2EA;
+                transition: 0.3s;
+                &:hover{
+                    stroke: darken(#AEC2EA, 15%);
+                }
+                &:active{
+                    stroke: darken(#AEC2EA, 20%);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.categories{
+    margin-top: 30px;
+
+}
+.title{
+font-size: 20px;
+font-weight: 700;
+color: #2D2D2F;
+}
+
+.list{
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.item button{
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+border: none;
+border-radius: 41px;
+padding: 10px;
+cursor:pointer;
+transition: 0.3s;
+white-space: nowrap;
+&:hover{
+opacity: 0.8;
+}
+}

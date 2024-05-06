@@ -1,0 +1,88 @@
+.cartList__wrapper{
+    border: 1px solid #AEC2EA;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.cartList__header{
+    height: 100px;
+    border: 1px solid #AEC2EA;  
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 15px 0 58px;
+    @media (max-width: 767px) {
+        padding:0 15px 0 15px;
+       }
+    .product__name{
+        font-size: 20px;
+        font-weight: 600;
+        color: #2D2D2F;
+        margin-top: -20px;
+        @media (max-width: 578px) {
+            font-size: 16px;
+           }
+    }
+    .cart__total__cost{
+        padding: 0 15px;
+        .total__title{
+            font-size: 16px;
+            color: #2D2D2F;
+            @media (max-width: 578px) {
+                font-size: 12px;
+                white-space: wrap;
+               }
+        }
+        .total__cost{
+            font-size: 20px;
+            font-weight: 700;
+            color:#2f2d2d ;
+            margin-top: 5px;
+            @media (max-width: 578px) {
+                font-size: 14px;
+               }
+        }
+    }
+    .checkout{
+        display: inline-block;
+        padding: 15px 66px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        background-color: #2967FF;
+        border-radius: 51px;
+        transition: 0.3s;
+        @media (max-width: 578px) {
+            padding: 8px 15px;
+            font-size: 12px;
+           }
+        &:hover{
+            background-color: darken(#2967FF, 15%);
+        }
+
+    }
+    .cart__img{
+        height: 100px;
+        width: auto;
+        object-fit: cover;
+        @media (max-width: 767px) {
+           display: none;
+          }
+    }
+}
+.cartList{
+    padding: 40px 78px 40px 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 1200px) {
+        padding: 20px 35px 20px 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 20px 15px 20px 15px;
+      }
+}

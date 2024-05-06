@@ -1,0 +1,38 @@
+.shoppingCartTop{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+
+    .title{
+        font-size: 20px;
+        font-weight: 700;
+        color: #2D2D2F;
+    }
+
+    .clearCartBtn{
+        font-size: 16px;
+        font-weight: 600;
+        color: #FF2D87;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+    &:hover{
+        color: darken(#FF2D87,  20%);
+    }
+    &:active{
+        color: darken(#FF2D87,  30%);
+    }
+
+    }
+}
+
+
+.emptyCart{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2D2D2F;
+    margin-top: 30px;
+}

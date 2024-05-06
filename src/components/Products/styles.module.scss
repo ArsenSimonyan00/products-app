@@ -1,0 +1,18 @@
+.products{
+    margin-top: 20px; 
+    list-style: none;
+    display: flex;
+    row-gap: 30px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    @media (max-width: 708px) {
+    justify-content: center;
+      }
+}
+
+.emptyText{
+  font-size: 18px;
+  margin: 50px;
+  color: #2D2D2F;
+  font-weight: 500;
+}

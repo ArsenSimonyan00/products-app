@@ -1,0 +1,19 @@
+.show__more{
+    font-weight: 600;
+    color: #727280;
+    font-size: 16px;
+    background-color: #F0F4FB;
+    border-radius: 51px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 15px 44px;
+    display: block;
+    margin: 30px auto 0;
+    &:hover{
+        background-color: #e5ecf9;
+    }
+    &:active{
+        background-color: #d7deeb;
+    }
+}
